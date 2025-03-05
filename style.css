@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    display: flex;
+    padding: 17px;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    object-fit: contain;
+}
+
+.boxes {
+    display: flex;
+    padding: 20px;
+    /* flex-wrap: wrap; */
+    /* margin-left: 70px; */
+    /* padding-left: 240px; */
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.box p {
+    /* width: 94px; */
+    font-size: 1rem;
+}
+
+.box:hover {
+    color: rgb(49, 49, 186);
+}
+
+.hambr {
+    cursor: pointer;
+    display: none;
+}
+
+.box:hover svg {
+    color: rgb(49, 49, 186);
+}
+
+.icon {
+    display: flex;
+}
+
+.search {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.search:hover {
+    background-color: lightblue;
+}
+
+.globe {
+    width: 38px;
+    height: 38px;
+    border-radius: 25px;
+}
+
+.globe:hover {
+    background-color: lightblue;
+}
+
+/* .content img {
+    margin-left: 12px;
+    padding-bottom: 4px;
+    align-self: center;
+} */
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.responsive-image {
+    height: 32px;
+    width: 112px;
+    margin: 0 auto;
+}
+
+main {
+    width: 90vw;
+    margin: auto;
+}
+
+@media (max-width :850px) {
+    .boxes {
+        display: none;
+    }
+
+    .hambr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .responsive-image {
+        height: 24px;
+        width: 84px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .content h1 {
+        font-size: 18px;
+    }
+
+    .responsive-image {
+        height: 18px;
+        width: 63px;
+    }
+
+    main {
+        margin: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .content h1 {
+        font-size: 14px;
+    }
+
+    .responsive-image {
+        height: 14px;
+        width: 49px;
+    }
+
+
+    .para {
+        margin: 0;
+    }
+
+    main {
+        margin: 0;
+    }
+}
+
+.parent button {
+    width: 255px;
+    border-radius: 7px;
+    padding: 6px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00b6d1;
+}
+
+.parent button:hover {
+    background-color: #2b727c;
+}
+
+.para {
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+}
+
+.parent {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    width: 100vw;
+    height: 20vh;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.last a {
+    text-decoration: none;
+    color: black;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item h2 {
+    margin-top: 0;
+}
+
+.item p {
+    margin-bottom: 20px;
+}
+
+.ck {
+    text-align: center;
+}
+
+.ck a {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ck a:hover {
+    background-color: #3e8e41;
+}
+
+/* Responsive layout */
+
+@media (max-width: 768px) {
+    .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .items {
+        grid-template-columns: 1fr;
+    }
+}
+/* 
+.ck {
+    width: 140px;
+    height: 25px;
+    transform: translateX(40%);
+    border: 2px solid black;
+    background-color: #5cb85c;
+    padding: 6px 16px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 6px;
+} */
