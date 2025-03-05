@@ -228,6 +228,7 @@ footer {
 
 .items {
     display: grid;
+    padding-left: 40px;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
